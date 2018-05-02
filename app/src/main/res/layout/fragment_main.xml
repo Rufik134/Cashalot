@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/colorLayoutBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:elevation="6dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:weightSum="2"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_pay"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/draw_edit_text_back"
+            >
+
+            <ImageView
+                android:layout_marginRight="16dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/left_orientir"
+                android:layout_toStartOf="@+id/left_orientir"
+                android:src="@drawable/ic_pay" />
+            <View
+                android:id="@+id/left_orientir"
+                android:layout_centerInParent="true"
+                android:layout_width="0.1dp"
+                android:layout_height="0.1dp"
+                android:background="@android:color/transparent"
+                />
+            <TextView
+
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/left_orientir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="7dp"
+                android:text="@string/pay"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                 />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layout_bonus"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/draw_registration_button_back"
+            >
+            <ImageView
+                android:id="@+id/bonus_image_view"
+                android:layout_marginRight="16dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_get_bonus" />
+            <View
+                android:id="@+id/right_orientir"
+                android:layout_centerInParent="true"
+                android:layout_width="0.1dp"
+                android:layout_height="0.1dp"
+                android:background="@android:color/transparent"
+                />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bonus_image_view"
+                android:elevation="7dp"
+                android:text="@string/getbonus"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:numColumns="2" />
+
+
+</FrameLayout>

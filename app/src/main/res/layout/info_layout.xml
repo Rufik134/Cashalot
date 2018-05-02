@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/email"
+            />
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/draw_edit_text_profile_back"
+            />
+         <TextView
+             android:layout_marginTop="24dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/describeproblem"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             />
+         <EditText
+             android:id="@+id/edit_text_problem"
+             android:layout_marginTop="4dp"
+             android:layout_marginBottom="24dp"
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:background="@drawable/draw_edit_text_profile_back"
+             android:lines="20"
+             />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/draw_send_problem_button_back"
+        android:text="@string/senffeedback"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3770f3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#36d6a3</color>
+    <color name="colorAccentSecond">#f2507c</color>
+    <color name="colorRegistrationButton">#4886f5</color>
+    <color name="colorLayoutBackground">#eef1f6</color>
+    <color name="colorTextGray">#d8dde8</color>
+    <color name="colorSendProblem">#aeaeae</color>
+</resources>
